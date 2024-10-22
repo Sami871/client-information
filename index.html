@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="m-0 box-border">
+    <div class="px-20 py-5 flex flex-col gap-10">
+      <!-- header  -->
+      <header
+        class="font-bold w-full text-3xl font-sans text-gray-800 focus:outline-none"
+      >
+        Client Information
+      </header>
+      <!-- border -->
+      <div class="w-full border-t border-gray-400"></div>
+      <!-- Name section  -->
+      <section>
+        <form class="flex flex-col w-full gap-3 text-gray-500">
+          <label for="name" class="font-semibold text-xl">Name</label>
+          <div class="gap-3 flex">
+            <div class="flex-col flex">
+              <input
+                class="w-[8rem] border border-gray-300 border-b-2 border-r-2 focus:outline-none focus:border-blue-500 p-1 h-7"
+                type="text"
+                name="name"
+              />
+              <span class="text-sm text-gray-600">First Name</span>
+            </div>
+            <div class="flex flex-col">
+              <input
+                class="w-[12rem] border border-gray-300 border-b-2 border-r-2 focus:outline-none p-1 h-7"
+                type="text"
+                name="name"
+              />
+              <span class="text-sm text-gray-600">Last Name</span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- Company section  -->
+      <section>
+        <form class="flex flex-col gap-3">
+          <label for="Company" class="font-semibold text-xl">Company</label>
+          <input
+            type="text"
+            name="company"
+            class="w-[15rem] border border-t-2 border-t-gray-300 border-gray-400 focus:outline-none"
+          />
+        </form>
+      </section>
+      <!-- Address section  -->
+      <section>
+        <form class="flex flex-col gap-3">
+          <label for="Company" class="font-semibold text-xl">Address</label>
+          <!-- street address  -->
+          <div class="flex flex-col">
+            <input
+              type="text"
+              name="address"
+              class="w-[27rem] border border-t-2 border-t-gray-300 border-gray-400 focus:outline-none"
+            />
+            <span class="text-sm text-gray-600">Street Address</span>
+          </div>
+          <!-- address line 2  -->
+          <div class="flex flex-col">
+            <input
+              type="text"
+              name="address"
+              class="w-[27rem] border border-t-2 border-t-gray-300 border-gray-400 focus:outline-none"
+            />
+            <span class="text-sm text-gray-600">Street Address Line 2</span>
+          </div>
+          <!-- state province  -->
+          <div class="gap-2 flex">
+            <div class="flex-col flex">
+              <input
+                class="w-[13rem] border border-gray-300 border-b-2 border-r-2 focus:outline-none"
+                type="text"
+                name="city"
+              />
+              <span class="text-sm text-gray-600">City</span>
+            </div>
+            <div class="flex flex-col">
+              <input
+                class="w-[13.5rem] border border-gray-300 border-b-2 border-r-2 focus:outline-none"
+                type="text"
+                name="state"
+              />
+              <span class="text-sm text-gray-600">State / Province</span>
+            </div>
+          </div>
+          <!-- Postal  -->
+          <div class="flex flex-col">
+            <input
+              type="text"
+              name="company"
+              class="w-[18rem] border border-t-2 border-t-gray-300 border-gray-400 focus:outline-none"
+            />
+            <span class="text-sm text-gray-600">Postal / Zip Code</span>
+          </div>
+        </form>
+      </section>
+      <!-- phone section  -->
+      <section>
+        <form class="flex flex-col gap-3">
+          <label for="phone number" class="font-semibold text-xl"
+            >Phone Number</label
+          >
+          <div class="flex gap-1">
+            <!-- area code  -->
+            <div class="flex flex-col">
+              <input
+                type="text"
+                name="area code"
+                class="w-[16rem] border border-gray-300 border-b-gray-400 focus:outline-none"
+              />
+              <span class="text-sm text-gray-600">Area Code</span>
+            </div>
+            <div class="text-2xl text-gray-500">-</div>
+            <!-- phone  -->
+            <div class="flex flex-col">
+              <input
+                type="text"
+                name="phone number"
+                class="w-[16rem] border border-gray-300 border-b-gray-400 focus:outline-none"
+              />
+              <span class="text-sm text-gray-600">Phone Number</span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- email section  -->
+      <footer>
+        <form class="flex flex-col gap-3">
+          <label for="email" class="font-semibold text-xl">Email</label>
+          <div class="flex flex-col">
+            <input
+              type="email"
+              name="company"
+              class="w-[23rem] border border-t-2 border-gray-300 focus:outline-none"
+            />
+            <span class="text-sm text-gray-600">example@example.com</span>
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>
